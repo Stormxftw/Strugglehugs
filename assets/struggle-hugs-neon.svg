@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="360" viewBox="0 0 1400 360" role="img" aria-labelledby="title desc">
+  <title id="title">Struggle Hugs</title>
+  <desc id="desc">Struggle Hugs rendered as an electric-blue neon tube sign on black.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#01030a"/>
+      <stop offset="0.55" stop-color="#030817"/>
+      <stop offset="1" stop-color="#010208"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="48%" r="55%">
+      <stop offset="0" stop-color="#0077ff" stop-opacity="0.18"/>
+      <stop offset="0.48" stop-color="#003b9b" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="wall" width="84" height="42" patternUnits="userSpaceOnUse">
+      <path d="M0 0H84M0 42H84M0 0V42M42 0V42M84 0V42" fill="none" stroke="#0b2a52" stroke-opacity="0.14" stroke-width="1"/>
+    </pattern>
+    <filter id="wideGlow" x="-30%" y="-100%" width="160%" height="300%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="tubeGlow" x="-30%" y="-100%" width="160%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="360" rx="14" fill="url(#background)"/>
+  <rect x="12" y="12" width="1376" height="336" rx="10" fill="url(#wall)" stroke="#0c3870" stroke-opacity="0.45"/>
+  <rect width="1400" height="360" rx="14" fill="url(#halo)"/>
+
+  <g aria-hidden="true">
+    <rect x="275" y="102" width="850" height="160" rx="26" fill="#006dff" opacity="0.06" filter="url(#wideGlow)"/>
+    <path d="M246 278H1154" stroke="#006fff" stroke-opacity="0.11" stroke-width="2"/>
+    <circle cx="223" cy="278" r="4" fill="#38bfff" opacity="0.8" filter="url(#smallGlow)"/>
+    <circle cx="1177" cy="278" r="4" fill="#38bfff" opacity="0.8" filter="url(#smallGlow)"/>
+  </g>
+
+  <g text-anchor="middle" font-family="Trebuchet MS, Arial Rounded MT Bold, Arial, sans-serif" font-size="112" font-weight="700" letter-spacing="8">
+    <text x="700" y="218" fill="none" stroke="#006cff" stroke-width="20" stroke-linejoin="round" opacity="0.20" filter="url(#wideGlow)">STRUGGLE HUGS</text>
+    <text x="700" y="218" fill="none" stroke="#008cff" stroke-width="10" stroke-linejoin="round" opacity="0.58" filter="url(#tubeGlow)">STRUGGLE HUGS</text>
+    <text x="700" y="218" fill="#07162b" stroke="#37b9ff" stroke-width="6" stroke-linejoin="round" filter="url(#tubeGlow)">STRUGGLE HUGS</text>
+    <text x="700" y="218" fill="none" stroke="#d8f8ff" stroke-width="2.2" stroke-linejoin="round">STRUGGLE HUGS</text>
+  </g>
+
+  <path d="M1160 278C1195 278 1205 301 1238 301H1280" fill="none" stroke="#177fd0" stroke-opacity="0.35" stroke-width="3"/>
+  <circle cx="1285" cy="301" r="5" fill="#b7f3ff" filter="url(#smallGlow)"/>
+</svg>
